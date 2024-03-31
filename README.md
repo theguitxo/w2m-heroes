@@ -1,6 +1,6 @@
 # W2mHeroes
 
-La aplicación se ha programado con la versión LTS actual de Angular (16) y los datos se obtienen a partir de un servidor de mocks programado con Node y Express.
+La aplicación se ha programado con la versión LTS actual de Angular ([^16.0.0](https://angular.io/guide/releases#actively-supported-versions)) y los datos se obtienen a partir de un servidor de mocks programado con Node y Express.
 
 ## Servidor de mocks
 
