@@ -1,0 +1,12 @@
+<div mat-dialog-title>
+  <span>
+    <mat-icon fontSet="material-icons-round">warning</mat-icon>
+    Error
+  </span>
+</div>
+<mat-dialog-content>
+  {{ data.message }}
+</mat-dialog-content>
+<mat-dialog-actions [align]="'end'">
+  <button type="button" mat-flat-button color="primary" mat-dialog-close>Cerrar</button>
+</mat-dialog-actions>

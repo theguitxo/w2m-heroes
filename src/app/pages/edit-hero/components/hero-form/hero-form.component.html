@@ -1,0 +1,83 @@
+<form [formGroup]="heroForm">
+  <div class="folders-wrapper">
+    <mat-form-field>
+      <mat-label>Alias</mat-label>
+      <input
+        matInput
+        type="text"
+        [formControlName]="'alias'"
+        class="input-alias"
+        placeholder="Introduzca el alias del super heroe">
+      <mat-error *ngIf="heroForm.controls.alias.hasError('required')">
+        El campo alias es requerido
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Nombre real</mat-label>
+      <input
+        matInput
+        type="text"
+        [formControlName]="'real_name'"
+        placeholder="Introduzca el nombre real del super heroe">
+        <mat-error *ngIf="heroForm.controls.real_name.hasError('required')">
+          El campo nombre real es requerido
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Grupo</mat-label>
+      <input
+        matInput
+        type="text"
+        [formControlName]="'group'"
+        placeholder="Introduzca el grupo del super heroe">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Planeta de origen</mat-label>
+      <input
+        matInput
+        type="text"
+        [formControlName]="'planet_of_origin'"
+        placeholder="Introduzca el planeta de origen del super heroe">
+        <mat-error *ngIf="heroForm.controls.planet_of_origin.hasError('required')">
+          El campo planeta de origen es requerido
+        </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Poderes</mat-label>
+      <mat-chip-grid #powersGrid aria-label="Introduzca los poderes" [formControlName]="'powers'">
+        <mat-chip-row *ngFor="let power of powers" (removed)="removeItem(power, powers)">
+          {{power}}
+          <button type="button" matChipRemove [attr.aria-label]="'eliminar ' + power">
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-row>
+      </mat-chip-grid>
+      <input placeholder="Nuevo poder..."
+        [matChipInputFor]="powersGrid"
+        (matChipInputTokenEnd)="addItem($event, powers)"/>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Armas</mat-label>
+      <mat-chip-grid #weaponsGrid aria-label="Introduzca las armas" [formControlName]="'weapons'">
+        <mat-chip-row *ngFor="let weapon of weapons" (removed)="removeItem(weapon, weapons)">
+          {{weapon}}
+          <button type="button" matChipRemove [attr.aria-label]="'eliminar ' + weapon">
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-row>
+      </mat-chip-grid>
+      <input placeholder="Nueva arma..."
+        [matChipInputFor]="weaponsGrid"
+        (matChipInputTokenEnd)="addItem($event, weapons)"/>
+    </mat-form-field>
+  </div>
+</form>
+
+<div class="buttons-wrapper">
+  <button type="button" mat-flat-button color="primary" [disabled]="!heroForm.valid" (click)="save()">
+    <mat-icon fontSet="material-icons-round">save</mat-icon>Guardar
+  </button>
+  <button type="button" mat-flat-button color="warn" [disabled]="!heroForm.touched" (click)="reset()">
+    <mat-icon fontSet="material-icons-round">restart_alt</mat-icon>Limpiar formulario
+  </button>
+</div>

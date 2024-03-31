@@ -1,27 +1,24 @@
 # W2mHeroes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.13.
+La aplicación se ha programado con la versión LTS actual de Angular (16) y los datos se obtienen a partir de un servidor de mocks programado con Node y Express.
 
-## Development server
+## Servidor de mocks
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para iniciar el servidor de mocks se ha de ejecutar el script `npm run mocks:server`. El servidor escucha en el puerto 8080 de localhost.
 
-## Code scaffolding
+Las peticiones al servidor tienen un retardo de 2 segundos para mostrar el spinner de carga.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Aplicación
 
-## Build
+La aplicación de Angular se inicia ejecutando el script `npm run start` y navegando a http://localhost:4200
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Test
 
-## Running unit tests
+Iniciar `npm run test` para ejecutar los tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Provocar error para ver el funcionamiento del interceptor de errores
 
-## Running end-to-end tests
+El formulario para editar o crear un super hero tiene un campo que no es obligatorio, 'Grupo', pero el servidor si que espera un dato en ese campo.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Si se intenta guardar la información de un super heroe sin ese dato se producirá un error, disparando el interceptor y mostrando el error en un modal.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

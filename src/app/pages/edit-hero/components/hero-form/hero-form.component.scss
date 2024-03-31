@@ -1,0 +1,30 @@
+.folders-wrapper {
+  display: flex;
+  gap: .5rem;
+  padding: 1rem;
+  flex-wrap: wrap;
+
+  mat-form-field {
+    width: calc(50% - .25rem);
+  }
+ 
+  mat-chip-row {
+    background-color: white;
+  }
+
+  .input-alias {
+    text-transform: uppercase;
+
+    &::placeholder {
+      text-transform: none;
+    }
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  padding: 0 1rem;
+  justify-content: flex-end;
+  gap: .5rem;
+}
+

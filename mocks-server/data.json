@@ -1,0 +1,227 @@
+[
+  {
+    "id": 1,
+    "real_name": "Bruce Wayne",
+    "alias": "batman",
+    "group": "Liga de la Justicia",
+    "planet_of_origin": "Tierra",
+    "powers": ["Inteligencia superior", "Gran habilidad en combate cuerpo a cuerpo", "Tecnología avanzada"],
+    "weapons": ["Batarangs", "Traje de Bat", "Batimóvil"]
+  },
+  {
+    "id": 2,
+    "real_name": "Clark Kent",
+    "alias": "superman",
+    "group": "Liga de la Justicia",
+    "planet_of_origin": "Krypton",
+    "powers": ["Super fuerza", "Vuelo", "Visión calorífica", "Súper velocidad", "Invulnerabilidad"],
+    "weapons": []
+  },
+  {
+    "id": 3,
+    "real_name": "Diana Prince",
+    "alias": "wonder woman",
+    "group": "Liga de la Justicia",
+    "planet_of_origin": "Themyscira",
+    "powers": ["Fuerza sobrehumana", "Velocidad", "Agilidad", "Reflejos", "Durabilidad", "Vuelo"],
+    "weapons": ["Lazo de la Verdad", "Espada", "Escudo indestructible"]
+  },
+  {
+    "id": 4,
+    "real_name": "Peter Parker",
+    "alias": "spider-man",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Agilidad sobrehumana", "Fuerza proporcional de una araña", "Sentido arácnido", "Capacidad para trepar paredes"],
+    "weapons": []
+  },
+  {
+    "id": 5,
+    "real_name": "Tony Stark",
+    "alias": "iron man",
+    "group": "Los Vengadores",
+    "planet_of_origin": "Tierra",
+    "powers": ["Inteligencia genial", "Armadura de Iron Man que otorga vuelo, fuerza y armas avanzadas"],
+    "weapons": ["Armadura de Iron Man"]
+  },
+  {
+    "id": 6,
+    "real_name": "Steve Rogers",
+    "alias": "capitán américa",
+    "group": "Los Vengadores",
+    "planet_of_origin": "Tierra",
+    "powers": ["Fuerza, velocidad y resistencia mejoradas", "Agilidad sobrehumana", "Experto en combate cuerpo a cuerpo"],
+    "weapons": ["Escudo de Vibranium"]
+  },
+  {
+    "id": 7,
+    "real_name": "Wade Wilson",
+    "alias": "deadpool",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Regeneración acelerada", "Agilidad y fuerza mejoradas", "Inmunidad a enfermedades y toxinas", "Habilidades de combate"],
+    "weapons": ["Katanas", "Pistolas"]
+  },
+  {
+    "id": 8,
+    "real_name": "Matt Murdock",
+    "alias": "daredevil",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Sentidos mejorados", "Reflejos y agilidad sobrehumanos", "Habilidades de combate"],
+    "weapons": ["Bastón de combate"]
+  },
+  {
+    "id": 9,
+    "real_name": "Remy LeBeau",
+    "alias": "gambit",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Cinética de la energía", "Maestría en combate", "Ladronzuelo experto"],
+    "weapons": ["Cartas cargadas", "Bastón bō"]
+  },
+  {
+    "id": 10,
+    "real_name": "Norrin Radd",
+    "alias": "silver surfer",
+    "group": "Sin grupo",
+    "planet_of_origin": "Zenn-La",
+    "powers": ["Manipulación cósmica", "Vuelo a velocidades hiperlumínicas", "Resistencia sobrehumana"],
+    "weapons": []
+  },
+  {
+    "id": 11,
+    "real_name": "Jessica Jones",
+    "alias": "jessica jones",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Fuerza sobrehumana", "Resistencia aumentada", "Resistencia mental"],
+    "weapons": []
+  },
+  {
+    "id": 12,
+    "real_name": "Eddie Brock",
+    "alias": "venom",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Simbionte alienígena que otorga fuerza sobrehumana", "Agilidad", "Regeneración"],
+    "weapons": ["Simbionte Venom"]
+  },
+  {
+    "id": 13,
+    "real_name": "John Constantine",
+    "alias": "john constantine",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Magia", "Experto en ocultismo", "Manipulación de energías sobrenaturales"],
+    "weapons": ["Conocimiento místico"]
+  },
+  {
+    "id": 14,
+    "real_name": "Jennifer Walters",
+    "alias": "she-hulk",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Fuerza sobrehumana", "Resistencia", "Regeneración"],
+    "weapons": []
+  },
+  {
+    "id": 15,
+    "real_name": "Victor von Doom",
+    "alias": "doctor doom",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Genio científico", "Control sobre la magia", "Fuerza y durabilidad aumentadas"],
+    "weapons": ["Armadura de Doctor Doom"]
+  },
+  {
+    "id": 16,
+    "real_name": "Billy Batson",
+    "alias": "shazam",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Sabiduría de Salomón", "Fuerza de Hércules", "Aguante de Atlas", "Poder de Zeus", "Valor de Aquiles", "Velocidad de Mercurio"],
+    "weapons": []
+  },
+  {
+    "id": 17,
+    "real_name": "Kara Zor-El",
+    "alias": "supergirl",
+    "group": "Sin grupo",
+    "planet_of_origin": "Krypton",
+    "powers": ["Super fuerza", "Vuelo", "Visión calorífica", "Súper velocidad", "Invulnerabilidad"],
+    "weapons": []
+  },
+  {
+    "id": 18,
+    "real_name": "Billy Kaplan",
+    "alias": "wiccan",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Manipulación de la realidad", "Manipulación de la energía mágica", "Vuelo"],
+    "weapons": []
+  },
+  {
+    "id": 19,
+    "real_name": "Ted Kord",
+    "alias": "blue beetle",
+    "group": "Sin grupo",
+    "planet_of_origin": "Tierra",
+    "powers": ["Armadura de alta tecnología", "Vuelo", "Armas de energía"],
+    "weapons": ["Armadura de Blue Beetle"]
+  },
+  {
+    "id": 20,
+    "real_name": "Hal Jordan",
+    "alias": "green lantern",
+    "group": "Cuerpo de Linternas Verdes",
+    "planet_of_origin": "Tierra",
+    "powers": ["Anillo de poder generando construcciones de luz sólida"],
+    "weapons": ["Anillo de Green Lantern"]
+  },
+  {
+    "id": 21,
+    "real_name": "Barry Allen",
+    "alias": "flash",
+    "group": "Liga de la Justicia",
+    "planet_of_origin": "Tierra",
+    "powers": ["Súper velocidad", "Viaje en el tiempo", "Fuerza sobrehumana"],
+    "weapons": []
+  },
+  {
+    "id": 22,
+    "real_name": "Jean Grey",
+    "alias": "phoenix",
+    "group": "X-Men",
+    "planet_of_origin": "Tierra",
+    "powers": ["Telepatía", "Telequinesis", "Manipulación de la energía"],
+    "weapons": []
+  },
+  {
+    "id": 23,
+    "real_name": "James Howlett",
+    "alias": "wolverine",
+    "group": "X-Men",
+    "planet_of_origin": "Tierra",
+    "powers": ["Regeneración acelerada", "Esqueleto y garras de adamantium", "Sentidos aumentados"],
+    "weapons": ["Garras retráctiles de adamantium"]
+  },
+  {
+    "id": 24,
+    "real_name": "Ororo Munroe",
+    "alias": "storm",
+    "group": "X-Men",
+    "planet_of_origin": "Tierra",
+    "powers": ["Control del clima", "Vuelo", "Manipulación atmosférica"],
+    "weapons": []
+  },
+  {
+    "id": 25,
+    "real_name": "Arthur Curry",
+    "alias": "aquaman",
+    "group": "Liga de la Justicia",
+    "planet_of_origin": "Tierra",
+    "powers": ["Super fuerza", "Agilidad", "Resistencia aumentada", "Comunicación con la vida marina"],
+    "weapons": []
+  }
+]

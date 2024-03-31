@@ -1,0 +1,48 @@
+@import '@angular/material/theming';
+
+table {
+  th {
+    font-weight: bold;
+  }
+
+  td {
+    padding: 1rem .5rem;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    margin: 0;
+    padding: 0 0 .25rem 0;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+}
+
+.alert {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  font-family: Roboto, sans-serif;
+
+  $app-warn: mat-palette($mat-pink);
+  $warn: mat-color($app-warn);
+  background-color: $warn;
+
+  padding: 2rem;
+  color: white;
+  box-sizing: border-box;
+
+  font-weight: bold;
+}

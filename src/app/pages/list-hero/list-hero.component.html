@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="options">
+    <app-input-filter></app-input-filter>
+    <button type="button" mat-flat-button color="primary" (click)="newHero()" [disabled]="isLoading | async">
+      <mat-icon fontSet="material-icons-round">add</mat-icon>Nuevo Super Heroe
+    </button>
+  </div>
+  <app-loader-wrapper>
+    <app-hero-list></app-hero-list>
+  </app-loader-wrapper>
+</div>

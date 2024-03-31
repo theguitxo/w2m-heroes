@@ -1,0 +1,8 @@
+<div class="buttons-wrapper">
+  <button type="button" mat-flat-button color="primary" (click)="goToList()" [disabled]="isLoading | async">
+    <mat-icon fontSet="material-icons-round">reorder</mat-icon>Listar Super Heroes
+  </button>
+</div>
+<app-loader-wrapper>
+  <app-hero-form></app-hero-form>
+</app-loader-wrapper>
