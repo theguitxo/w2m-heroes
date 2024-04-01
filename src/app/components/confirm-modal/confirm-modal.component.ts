@@ -1,10 +1,11 @@
-import { Component, Inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-confirm-modal',
   templateUrl: './confirm-modal.component.html',
-  styleUrls: ['./confirm-modal.component.scss']
+  styleUrls: ['./confirm-modal.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConfirmModalComponent {
   /**

@@ -1,11 +1,12 @@
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { LoadingService } from '../../services/loader.service';
 import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit-hero',
   templateUrl: './edit-hero.component.html',
-  styleUrls: ['./edit-hero.component.scss']
+  styleUrls: ['./edit-hero.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EditHeroComponent {
   private loadingService = inject(LoadingService);

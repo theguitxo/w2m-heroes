@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit, ViewChild } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { MatTableDataSource } from '@angular/material/table';
@@ -16,7 +16,8 @@ import { ConfirmModalComponent } from '../../../../components/confirm-modal/conf
 @Component({
   selector: 'app-hero-list',
   templateUrl: './hero-list.component.html',
-  styleUrls: ['./hero-list.component.scss']
+  styleUrls: ['./hero-list.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeroListComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -27,7 +28,7 @@ export class HeroListComponent implements OnInit {
 
   displayedColumns: string[] = ['real_name', 'alias', 'group', 'planet_of_origin', 'powers', 'weapons', 'options'];
   dataSource!: MatTableDataSource<Hero>;
-  
+
   showList!: Observable<boolean>;
   noData!: Observable<boolean>;
 

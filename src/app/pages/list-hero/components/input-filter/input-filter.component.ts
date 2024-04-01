@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { debounceTime, filter, tap } from 'rxjs';
@@ -10,7 +10,8 @@ import { getHeroData } from '../../../../store/app.actions';
 @Component({
   selector: 'app-input-filter',
   templateUrl: './input-filter.component.html',
-  styleUrls: ['./input-filter.component.scss']
+  styleUrls: ['./input-filter.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputFilterComponent implements OnInit {
   private destroyRef = inject(DestroyRef);

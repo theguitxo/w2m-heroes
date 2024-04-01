@@ -1,4 +1,4 @@
-import { Component, DestroyRef, inject, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, inject, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { HeroState } from '../../../../models/state.model';
 import { filter, take } from 'rxjs';
@@ -12,7 +12,8 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 @Component({
   selector: 'app-hero-form',
   templateUrl: './hero-form.component.html',
-  styleUrls: ['./hero-form.component.scss']
+  styleUrls: ['./hero-form.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeroFormComponent implements OnInit {
   private store = inject(Store<HeroState>);
