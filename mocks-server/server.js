@@ -25,7 +25,7 @@ app.get('/api/:filter', function(req, res) {
 
 app.post('/api/', function(req, res) {
   if (!req.body.group) {
-    res.status(400).json({ result: 'KO', message: 'Hero data missing' });
+    res.status(400).json({ result: 'KO', message: 'Faltan datos del grupo del super heroe' });
   } else {
     const newID = heros.length ? heros.map(i => i.id).sort((a, b) => b - a)[0] : 1;
     const newHero = {
